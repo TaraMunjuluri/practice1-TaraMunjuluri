@@ -16,8 +16,8 @@ knitr::opts_chunk$set(echo = TRUE)
     b. In the RMarkdown file, write down table of team members, and their github repository links;   
     Tara Munjuluri:https://github.com/TaraMunjuluri/practice1-TaraMunjuluri
     Aditi Nachnani: https://github.com/AditiN2003/practice1-aditin2003.git
-    Snehal Arla:https://github.com/Snehal2301/Graph
-)
+    Snehal Arla: https://github.com/Snehal2301/Graph
+
 
 the number of successful pull requests you made, and the github repository to which you requested a change;  
 Number of pull requests made: 2
@@ -31,7 +31,7 @@ Repositories accepted from: Aditi Nachnani, Snehal Arla
 3. To create separate branches when needed to do devlopment and testing in a separate place
 
 2. Generate the graph of LifExp vs. gdpPercap for US, Canada (fixed data) and Australia by RMarkdown based on the data set "gapminder-5060", like what we did in the class.  
-Please use Github to collaborate on this problem. For example, one member can create the plot of US in his/her repository. The other member will fork this repository, add the result for the second country, and make a pull request for merging into the main repository. Each member should at least analyze one country and make at least one pull request. **Please submit the RMarkdown file, the output file, and the screen shot of the successful pull request and the merge.**
+Please use Github to collaborate on this problem. For example, one member can create the plot of US in his/her repository. The other member will fork this repository, add the result for the second country, and make a pull request for merging into the main repository. Each member should at least analyze one country and make at least one pull request. **Please submit the RMarkdown file, the output file, and the screen shot of the successful pull request 0and the merge.**
 
 ```{r}
 gapMinder <- read.csv("gapminder-5060.csv",)
