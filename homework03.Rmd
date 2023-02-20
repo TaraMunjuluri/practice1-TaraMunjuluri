@@ -47,7 +47,15 @@ subset_gapMinder <- subset(gapMinder, country %in% c("Australia", "Canada","Unit
 3. Write a paragraph (~200 words) describing an example of what you consider data science. Write your paragraph in R Markdown. Include at least 
     a. one link to a chart or an image and 
     b. at least one itemized or enumerated list.
-    
+   
+     I consider data science as analysis of information to find useful patterns. An example I consider as data science is determining predictions for the weather by analyzing previous weather tempuratures. This is helpful so that we can determine the forecast of the days ahead. These patterns focused on extracting knowledge from typically large data sets and applying the knowledge and insights from that data to solve many problems. Many real-world examples including analyzing algorithms in Netflix to provide suggetions for movies and suggestions for songs in spotify
+https://www.climate.gov/maps-data/dataset/future-climate-projections-graphs-maps
+1,Form a hypothesis 
+2.Make observations 
+3.Analyze and interpret the data
+4.Draw conclusions
+5.Publish results that can be validated with further experiments 
+6.Repeat this process
 
     
 
