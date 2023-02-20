@@ -22,19 +22,20 @@ knitr::opts_chunk$set(echo = TRUE)
 the number of successful pull requests you made, and the github repository to which you requested a change;  
 Number of pull requests made: 2
 Requested changes:Aditi Nachnani, Snehal Arla
+
 the number of pull requests you accepted, and the github repository from which you accepted.  
 Number of pull requests accepted: 2
 Repositories accepted from: Aditi Nachnani, Snehal Arla
-    c. Write down a list with at least 3 tips of how to make working with git/github easier  
+
+c. Write down a list with at least 3 tips of how to make working with git/github easier  
 1.To make commits after changes to know what updates/changes have been made
 2.To make sure some sort of change has been made before trying to make a pull request and making sure you have not created to repositories under the same branch to make pull requests easier
 3. To create separate branches when needed to do devlopment and testing in a separate place
 
-2. Generate the graph of LifExp vs. gdpPercap for US, Canada (fixed data) and Australia by RMarkdown based on the data set "gapminder-5060", like what we did in the class.  
-Please use Github to collaborate on this problem. For example, one member can create the plot of US in his/her repository. The other member will fork this repository, add the result for the second country, and make a pull request for merging into the main repository. Each member should at least analyze one country and make at least one pull request. **Please submit the RMarkdown file, the output file, and the screen shot of the successful pull request 0and the merge.**
 
+2. Generate the graph of LifExp vs. gdpPercap for US, Canada (fixed data) and Australia by RMarkdown based on the data set "gapminder-5060", like what we did in the class.  
 ```{r}
-gapMinder <- read.csv("gapminder-5060.csv",)
+gapMinder <- read.csv("gapminder-5060 (1).csv")
 ```
 ```{r}
 summary(gapMinder)
@@ -44,11 +45,24 @@ subset_gapMinder <- subset(gapMinder, country %in% c("Australia", "Canada","Unit
 
 
 
+```
+
+
+
+```{r}
+library(ggplot2)
+ggplot(data = subset_gapMinder, aes(x = lifeExp, y = gdpPercap)) +
+  geom_point(aes(color = country))+
+   labs(title = "Life Expectancy vs. GDP per capita by Country",
+       x = "Life Expectancy",
+       y = "GDP per capita") +
+  scale_color_manual(values = c("#0072B2", "#D55E00", "#009E73")) +
+  scale_x_continuous(limits = c(0, 120)) +
+  scale_y_continuous(limits = c(100, 20000))
+```
 3. Write a paragraph (~200 words) describing an example of what you consider data science. Write your paragraph in R Markdown. Include at least 
     a. one link to a chart or an image and 
     b. at least one itemized or enumerated list.
-<<<<<<< HEAD
-   
      I consider data science as analysis of information to find useful patterns. An example I consider as data science is determining predictions for the weather by analyzing previous weather tempuratures. This is helpful so that we can determine the forecast of the days ahead. These patterns focused on extracting knowledge from typically large data sets and applying the knowledge and insights from that data to solve many problems. Many real-world examples including analyzing algorithms in Netflix to provide suggetions for movies and suggestions for songs in spotify
 https://www.climate.gov/maps-data/dataset/future-climate-projections-graphs-maps
 1,Form a hypothesis 
@@ -58,13 +72,11 @@ https://www.climate.gov/maps-data/dataset/future-climate-projections-graphs-maps
 5.Publish results that can be validated with further experiments 
 6.Repeat this process
 
-=======
-    
-  
->>>>>>> 7a15055f827a6ffb0f2b12ed45056bb4739e98dd
     
 
 Note: your submission is supposed to be fully reproducible, i.e. the TA and I will 'knit' your submission in RStudio. Including the link to the image is the tricky part here. Make sure that you don't use any file structure that depends on your computing environment.
 
 
 For the submission: submit your solution in an **R Markdown file** and (just for insurance) submit the corresponding html (or Word) file with it. 
+
+
