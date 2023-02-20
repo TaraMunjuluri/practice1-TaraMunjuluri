@@ -412,7 +412,7 @@ like what we did in the class.</p></li>
 ##  Mean   : 19698280   Mean   :  4558.5  
 ##  3rd Qu.: 11007307   3rd Qu.:  5589.7  
 ##  Max.   :754550000   Max.   :113523.1</code></pre>
-<pre class="r"><code>subset_gapMinder &lt;- subset(gapMinder, country %in% c(&quot;Australia&quot;, &quot;Canada&quot;,&quot;United States&quot;))</code></pre>
+<pre class="r"><code>subset_gapMinder &lt;- subset(gapMinder, country %in% c(&quot;Australia&quot;,&quot;United States&quot;,&quot;Canada&quot;))</code></pre>
 <pre class="r"><code>library(ggplot2)
 ggplot(data = subset_gapMinder, aes(x = lifeExp, y = gdpPercap)) +
   geom_point(aes(color = country))+
