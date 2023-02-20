@@ -16,7 +16,8 @@ knitr::opts_chunk$set(echo = TRUE)
     b. In the RMarkdown file, write down table of team members, and their github repository links;   
     Tara Munjuluri:https://github.com/TaraMunjuluri/practice1-TaraMunjuluri
     Aditi Nachnani: https://github.com/AditiN2003/practice1-aditin2003.git
-    Snehal Arla: https://github.com/Snehal2301/practice1-your-Snehal2301
+    Snehal Arla:https://github.com/Snehal2301/Graph
+)
 
 the number of successful pull requests you made, and the github repository to which you requested a change;  
 Number of pull requests made: 2
